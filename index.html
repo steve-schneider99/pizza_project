@@ -9,14 +9,14 @@
   </head>
   <body>
     <h1>Epicodus Pizza Co.</h1>
-    <h2 id="instructions">Let's pair you with a pizza!</h2>
     <button type="start-pizza" name="start-pizza" id="start-pizza">Find My Pizza Pair!</button>
     <form id="pizza-create" class="form-group">
-      <div class="size-form">
+      <div class="pizzaSize-form">
+        <h2>Let's pair you with a pizza!</h2>
         <label for="pizza-size">Today I'd like to:</label>
         <select class="form-group" id="size-choice" name="size-choice">
           <option selected disabled hidden value="">Choose:</option>
-          <option value="small">Pair Down! (Small)</option>
+            <option value="small">Pair Down! (Small)</option>
           <option value="medium">Pair Even! (Medium)</option>
           <option value="large">Pair Up! (Large)</option>
         </select>
@@ -38,6 +38,13 @@
       </div>
     </form>
 
+    <div class="pizza-cost">
+      <h2>Well this is unfortunate.</h2>
+      <h3>Your pairs have left for lunch.</h3>
+      <h3>Today your pairs cost you $<span class=cost></span></h3>
+
+
+    </div>
 
   </body>
 </html>

@@ -27,3 +27,13 @@ Pizza.prototype.pizzaCost = function () {
   var cost = (((this.pizzaSizeCost()) + ((this.toppings.length) * .5)) * (this.quantity));
   return cost;
 };
+
+
+$(document).ready(function() {
+  $("#start-pizza").click(function() {
+  $("#start-pizza").slideUp();
+  $(".pizzaSize-form").delay(750).fadeIn(750);
+  });
+
+
+});

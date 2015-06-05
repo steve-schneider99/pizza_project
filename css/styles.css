@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+.pizzaSize-form {
+  display: none;
+}
+
+.toppings-form {
+  display: none;
+}
+
+.quantity-form {
+  display: none;
+}
+
+.pizza-cost {
+  display: none;
+}
