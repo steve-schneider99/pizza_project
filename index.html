@@ -8,25 +8,31 @@
     <title>Epicodus Pizza Co.</title>
   </head>
   <body>
-    <h1>It's monday! Let's pair you with a pizza!</h1>
+    <h1>Epicodus Pizza Co.</h1>
+    <h2 id="instructions">It's monday! Let's pair you with a pizza!</h2>
+    <button type="start-pizza" name="start-pizza" id="start-pizza">Find My Pizza Pair!</button>
+    <form id="pizza-create" class="form-group">
+    <div class="size-form">
+      <label for="pizza-size">Today I'd like to:</label>
+      <select class="form-group" id="size-choice" name="size-choice">
+        <option selected disabled hidden value="">Choose:</option>
+        <option value="small">Pair Down! (Small)</option>
+        <option value="medium">Pair Even! (Medium)</option>
+        <option value="large">Pair Up! (Large)</option>
+      </select>
+    </div>
 
-    <form id="pizza-size" class="form-group">
-      <label for=""></label>
+    <div class="toppings-form">
+      <label for="pizza-toppings">What qualities are you looking for in a pair?</label><br>
+      <input type="checkbox" name="cheese" value="cheese"> No frills, just want to learn (Cheese)<br>
+      <input type="checkbox" name="pepperoni" value="pepperoni"> I'm open to what they want (Pepperoni)<br>
+      <input type="checkbox" name="olives" value="olives"> They like to code a little different (Olives)<br>
+      <input type="checkbox" name="mushrooms" value="mushrooms"> Someone who likes to work in the dark (Mushrooms)</br>
+      <input type="checkbox" name="anchovies" value="anchovies"> The eccentric outcast (anchovies)<br>
 
+    </div>
     </form>
 
 
   </body>
 </html>
-
-*Website where user can order a pizza and see the final cost.
-
---User can choose quantity, toppings, size.
---create method for calculating cost.
-
-Requirements:
-Code meets standards from previous weeks
-Objects drive application logic (in JS not jQuery)
-Specs written for JS functions
-Constructors and prototypes used successfully
-Web app works as expected
