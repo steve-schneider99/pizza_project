@@ -30,9 +30,34 @@ Pizza.prototype.pizzaCost = function () {
 
 
 $(document).ready(function() {
+  var pizza = new Pizza(0, [], "");
   $("#start-pizza").click(function() {
-  $("#start-pizza").slideUp();
-  $(".pizzaSize-form").delay(750).fadeIn(750);
+    $("#start-pizza").slideUp();
+    $(".pizzaSize-form").delay(750).fadeIn(750);
+    $("#great-choice").hide();
+  });
+
+  $("#size-choice").change(function() {
+    var pizzaSize = parseInt($("option#size-choice").val());
+    pizza.changeSize(pizzaSize);
+    // $("#great-choice").show();
+    // $("#great-choice").delay(750).hide();
+    $(".pizzaSize-form").slideUp();
+    $(".toppings-form").delay(750).fadeIn(750);
+  });
+
+  $("#toppings-button").click(function() {
+    var pizzaToppings = [];
+    $(".toppings-form").slideUp();
+    $(".quantity-form").delay(750).fadeIn(750);
+  });
+
+  $("#quantity-submit").click(function() {
+    var pizzaQuantity = 0;
+
+    $(".quantity-form").slideUp();
+    $(".pizza-cost").delay(750).fadeIn(750);
+
   });
 
 
