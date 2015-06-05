@@ -8,3 +8,8 @@ function Toppings() {
   this.toppingsList = [];
 
 };
+
+
+Pizza.prototype.addToppings = function(topping) {
+  this.toppings.push(topping);
+};

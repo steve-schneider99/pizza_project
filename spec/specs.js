@@ -1,9 +1,16 @@
 describe('Pizza', function() {
   it('creates a pizza', function() {
-    var testToppings = ["cheese", "pepperoni", "olives"];
-    var testPizza = new Pizza("1", testToppings, "large");
-    expect(testPizza.quantity).to.eq("1");
-    expect(testPizza.toppings).to.eq(testToppings);
-    expect(testPizza.pizzaSize).to.eq("large");
+    var testPizza = new Pizza("1", ["cheese", "pepperoni", "olives"], "large");
+    expect(testPizza.quantity).to.equal("1");
+    expect(testPizza.toppings).to.eql(["cheese", "pepperoni", "olives"]);
+    expect(testPizza.pizzaSize).to.equal("large");
   });
+
+  it('adds a topping to a pizza', function() {
+    var testPizza = new Pizza("1", [], "large");
+    testPizza.addToppings("pepperoni");
+    expect(testPizza.toppings).to.eql(["pepperoni"]);
+  });
+
+
 });
