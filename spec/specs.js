@@ -16,6 +16,12 @@ describe('Pizza', function() {
     var testPizza = new Pizza();
     testPizza.changeQuantity(2);
     expect(testPizza.quantity).to.eq(2);
+  });
+
+  it("changes the size of the pizza", function() {
+    var testPizza = new Pizza();
+    testPizza.changeSize("small");
+    expect(testPizza.pizzaSize).to.equal("small");
 
   });
 });

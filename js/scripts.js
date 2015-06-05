@@ -5,7 +5,7 @@ function Pizza(quantity, toppings, pizzaSize) {
 };
 
 function Toppings() {
-  this.toppingsList = [];
+  this.toppingsList = ["cheese", "pepperoni", "olives", "mushrooms", "onions", "peppers", "pineapple", "ham", "anchovies"];
 
 };
 
@@ -16,4 +16,9 @@ Pizza.prototype.addToppings = function(topping) {
 
 Pizza.prototype.changeQuantity = function(newQuantity) {
   this.quantity = newQuantity;
+};
+
+Pizza.prototype.changeSize = function (newSize) {
+  this.pizzaSize = "";
+  this.pizzaSize = this.pizzaSize + newSize;
 };
